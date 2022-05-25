@@ -7,7 +7,7 @@ class TextInfo():
             if i in vowels:
                 v_count += 1
             else:
-                c_count += 1
+                c_count == 0
         return v_count       
     def count_cons(self, text):
         v_count = 0

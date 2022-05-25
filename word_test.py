@@ -7,10 +7,10 @@ class TestWordMethods(unittest.TestCase):
         self.wrd = TextInfo()
     
     def test_vowels(self):
-        self.assertGreater(self.wrd.count_vowels('hello world'), True, 'there are vowels present')
+        self.assertEqual(self.wrd.count_vowels('hello world'), 3, 'there should be 2 vowels.')
         
     def test_cons(self):
-        self.assertGreater(self.wrd.count_cons('hello world'), True, 'there are consonants present')
+        self.assertGreater(self.wrd.count_cons('hello world'), 7, 'there should be 7 consonants.')
     
     
 if __name__ == '__main__':
